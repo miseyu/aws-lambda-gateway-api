@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+      "browser": true,
+      "node": true
+  },
+  "globals": {
+    "angular": false,
+    "_": false,
+    "templateCacheByGulp": false,
+    "BaseComponent": false
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "comma-dangle": 0,
+    "no-console": 1,
+    "no-debugger": 1,
+    // _で始まる変数名を許可
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "strict": 0,
+    // http://eslint.org/docs/rules/no-shadow
+    "no-shadow ": 0,
+    // indent 2
+    "indent": [2, 2],
+    // http://eslint.org/docs/rules/brace-style
+    "brace-style": 0,
+    // 全てキャメルケースで書く
+    "camelcase": [2, {"properties": "never"}],
+    // ファイルの最後に空行を配置する必要はない
+    "eol-last": 0,
+    "no-trailing-spaces": 0,
+    "quotes": 0,
+    // not var
+    "no-var": 2,
+    "no-unused-vars":0
+  }
+}

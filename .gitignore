@@ -2,10 +2,7 @@
 .sass-cache
 node_modules
 tmp/
-local/
-development/
-production/
-test/
+dist/
 mocha/
 bower_components
 .DS_Store
