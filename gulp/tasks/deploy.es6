@@ -7,6 +7,6 @@ module.exports = (options)=> {
     AWS.config.update(options.setting.awsSetting)
     const lambda = new AWS.Lambda()
     return awsLambda.deploy(`${options.path.dest.path}/dist.zip`,
-      options.setting.lambdaSetting, null, null, lambda)
+      options.setting.lambdaSetting, ()=> {}, null, lambda)
   })
 }
