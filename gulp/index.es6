@@ -8,6 +8,11 @@ const path = require('path')
 const SRC_PATH = path.resolve(path.join("src"))
 const DEST_PATH = path.resolve(path.join("dist"))
 
+const awsSetting = {
+  region: 'ap-northeast-1',
+  accessKeyId: args.accessKeyId,
+  secretAccessKey: args.secretAccessKey
+}
 
 const lambdaSetting = {
   region: 'ap-northeast-1',
@@ -25,7 +30,8 @@ const lambdaSetting = {
 
 const options = {
   setting: {
-    lambdaSetting: lambdaSetting
+    lambdaSetting,
+    awsSetting
   },
   path: {
     src: {
