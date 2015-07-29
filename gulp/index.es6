@@ -28,10 +28,14 @@ const lambdaSetting = {
   // }
 }
 
+const bigquerySetting = Object.assign({ project_id: args.projectId },
+  require(path.resolve(path.join("keyFile.json"))))
+
 const options = {
   setting: {
     lambdaSetting,
-    awsSetting
+    awsSetting,
+    bigquerySetting
   },
   path: {
     src: {
@@ -56,6 +60,7 @@ gulp.task('default', (done)=> {
     'clean',
     'eslint',
     'babel',
+    'preprocess',
     'module-install',
     'packaging',
     'deploy'

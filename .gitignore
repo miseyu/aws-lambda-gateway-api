@@ -7,3 +7,4 @@ mocha/
 bower_components
 .DS_Store
 *.log
+keyFile.json

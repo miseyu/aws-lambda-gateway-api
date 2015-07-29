@@ -25,7 +25,9 @@
   "dependencies": {
     "async": "^1.4.0",
     "bluebird": "^2.9.34",
+    "gcloud": "^0.16.0",
     "gm": "^1.18.1",
+    "googleapis": "^2.1.1",
     "lodash": "^3.10.0"
   }
 }

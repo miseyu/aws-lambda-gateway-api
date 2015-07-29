@@ -3,5 +3,5 @@ aws lambda gateway api sample
 
 ## Usage
 ``` sh
-gulp --accessKeyId accessKeyId --secretAccessKey secretAccessKey
+gulp --accessKeyId accessKeyId --secretAccessKey secretAccessKey --projectId projectId
 ```
